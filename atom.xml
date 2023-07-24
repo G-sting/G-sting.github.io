@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://G-sting.github.io</id>
+    <title>sting</title>
+    <updated>2023-07-24T13:54:48.090Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://G-sting.github.io"/>
+    <link rel="self" href="https://G-sting.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://G-sting.github.io/images/avatar.png</logo>
+    <icon>https://G-sting.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, sting</rights>
+    <entry>
+        <title type="html"><![CDATA[Day 11 学习python第十一天]]></title>
+        <id>https://G-sting.github.io/post/day-11-xue-xi-python-di-shi-yi-tian/</id>
+        <link href="https://G-sting.github.io/post/day-11-xue-xi-python-di-shi-yi-tian/">
+        </link>
+        <updated>2023-07-13T12:25:09.000Z</updated>
+        <content type="html"><![CDATA[<p>🏓🏓🏓<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307132056184.png" alt="" loading="lazy"><br>
+all（）：除了0 空 FALSE都算TURE   空元组 空列表返回值为TURE<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242107391.png" alt="" loading="lazy"><br>
+any( ) 如果全为FALSE 则返回FALSE 如果·有一个TURE 返回TURE<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242109924.png" alt="" loading="lazy"><br>
+sorted( )：sorted 可以对所有可迭代对象排序<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242113637.png" alt="" loading="lazy"><br>
+range( ) 创建一个整数列表 ，一般用在for循环中<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242120931.png" alt="" loading="lazy"><br>
+zip ( ) :就是用来打包的<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242122038.png" alt="" loading="lazy"><br>
+enumerte( ):枚举<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307242147277.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY 9 学习python第九天]]></title>
+        <id>https://G-sting.github.io/post/day-9-xue-xi-python-di-jiu-tian/</id>
+        <link href="https://G-sting.github.io/post/day-9-xue-xi-python-di-jiu-tian/">
+        </link>
+        <updated>2023-07-10T12:49:11.000Z</updated>
+        <content type="html"><![CDATA[<p>🦊🦊🦊</p>
+<h1 id="函数的基本类型">函数的基本类型</h1>
+<ul>
+<li>无参数 无返回值，一般用于提示信息打印</li>
+<li>无参数 有返回值，多用在数据采集中，比如获取系统信息</li>
+<li>有参数 无返回值，多用在设置某些不需要返回值的参数设计</li>
+<li>有参数 有返回值 一般是计算型的，需要参数，最终也要返回结果</li>
+</ul>
+<h2 id="局部变量">局部变量</h2>
+<ul>
+<li>局部变量 就是在函数内部定义的变量 作用域仅仅局限在函数的内部</li>
+<li>不同的函数 可以定义相同的局部变量 但是各自用各自的不会产生影响</li>
+</ul>
+<h3 id="局部变量的作用">局部变量的作用</h3>
+<p>为了临时的保存数据，需要在函数中定义来进行存储</p>
+<h2 id="全局变量">全局变量</h2>
+<p>可以在整个程序里面使用的数据</p>
+<h3 id="tip">Tip：</h3>
+<ul>
+<li>当全局变量和局部变量出现重复定义的时候，程序会优先执行使用函数内部定义的变量</li>
+<li>如果在函数的内部想对全局变量进行修改的话，必须用global关键字进行声明 格式：global 全局变量</li>
+</ul>
+<h2 id="函数的引用">函数的引用</h2>
+<p>不可变类型：改变地址 不改变变量<br>
+可变类型：不改变地址 改变变量</p>
+<h2 id="小结-在python当中-万物皆对象-在函数调用的时候实参传递的就是对象的引用">小结 在python当中 万物皆对象 在函数调用的时候，实参传递的就是对象的引用</h2>
+<p>了解了原理之后就可以更好的去把控 在函数内部的处理是否会影响到函数外部的数据变化</p>
+<ul>
+<li>参数的传递是通过对象引用来完成的</li>
+<li>参数的传递是通过对象引用来完成的</li>
+<li>参数的传递是通过对象引用来完成的</li>
+</ul>
+<h2 id="匿名函数">匿名函数</h2>
+<p>python中使用lambda关键字创建匿名函数，所谓匿名即这个函数没有名字不用def关键字创建标准的函数</p>
+<h3 id="格式">格式：</h3>
+<p>lambda 参数1 参数2 参数3 ...  :表达式</p>
+<h3 id="特点">特点：</h3>
+<p>1.使用lambda关键字去创建函数<br>
+2.没有名字的函数，<br>
+3.匿名函数冒号后面的表达式有且只有一个，注意：是表达式不是语句<br>
+4.匿名函数自带return 而这个return的结果就是表达式计算后的结果</p>
+<h3 id="使用">使用</h3>
+<p>通过变量来调用匿名函数</p>
+<h2 id="lambda与三元运算">lambda与三元运算</h2>
+<p>示例：lambda x,y: x if x&gt;y else y</p>
+<h3 id="lambda的缺点">lambda的缺点：</h3>
+<ul>
+<li>lambda只能是单个表达式，不是代码块，lambda的设计就是为了满足简单函数的场景</li>
+<li>仅仅能封装有限的逻辑，复杂逻辑实现不了，必须使用def来处理</li>
+</ul>
+<h2 id="递归函数">递归函数</h2>
+<p>如果一个函数在内部不调用其他的函数，而是自己调用自己本身的话，这个函数就是递归函数。<br>
+递归函数必须要有一个结束的条件，否则递归无法结束会一直递归下去，只到达最大递归深度报错</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY8 学习python第八天]]></title>
+        <id>https://G-sting.github.io/post/day8-xue-xi-python-di-ba-tian/</id>
+        <link href="https://G-sting.github.io/post/day8-xue-xi-python-di-ba-tian/">
+        </link>
+        <updated>2023-07-09T12:06:30.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="参数的分类">参数的分类</h1>
+<ul>
+<li>必选参数，默认参数（缺省参数），可选参数，关键字参数<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307092030134.png" alt="" loading="lazy"></li>
+</ul>
+<h2 id="参数的定义">参数的定义</h2>
+<p>参数：其实就是函数为了实现某项特定的功能，进而为了得到实现功能所需要的数据</p>
+<ul>
+<li>参数就是为了得到外部数据的</li>
+</ul>
+<h1 id="函数的返回值">函数的返回值</h1>
+<p>概念：函数执行完以后会返回一个对象，如果在函数的内部有return 就可以返回一个实际的值，否则返回的就是None<br>
+类型：可以返回任意类型，返回值类型应该取决于return后面的类型<br>
+用途：给调用方返回数值</p>
+<ul>
+<li>在一个函数体内可以出现多个return值，但是肯定只能返回一个return</li>
+<li>如果在一个函数体内 执行了return 意味着函数就退出了，return后面的代码将不会再执行</li>
+</ul>
+<h2 id="函数的分类-根据函数的参数和返回值来决定">函数的分类 根据函数的参数和返回值来决定</h2>
+<ul>
+<li>有参数无返回值</li>
+<li>有参数有返回值</li>
+<li>无参数有返回值</li>
+<li>无参数无返回值<br>
+课堂练习<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307092129489.png" alt="" loading="lazy"></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Day 7 学习python第7天]]></title>
+        <id>https://G-sting.github.io/post/day-7-xue-xi-python-di-7-tian/</id>
+        <link href="https://G-sting.github.io/post/day-7-xue-xi-python-di-7-tian/">
+        </link>
+        <updated>2023-07-08T12:49:59.000Z</updated>
+        <content type="html"><![CDATA[<p>🤠🤠🤠</p>
+<h2 id="字典及其常用方法">字典及其常用方法</h2>
+<h3 id="什么是字典">什么是字典</h3>
+<ul>
+<li>字典是python中一种重要的数据类型，可以存储任意对象。字典是以键值对的形式创建的{'key':'value'}的集合</li>
+<li>字典查找某个元素时，是根据键来访问，效率非常高。和列表一样支持对数据的添加，修改和删除操作</li>
+<li>访问值的安全方式：get方法，在我们不确定字典中是否存在某个键又想获得其值时，可以用get方法</li>
+</ul>
+<h3 id="特点">特点</h3>
+<p>1.不是序列类型 没有下标的概念 是一个无序的键值集合，是内置的高级数据类型<br>
+2.用{ }来表示字典对象 每个键值对用逗号分隔<br>
+3.键必须是不可变的类型【元组，字符串】值可以是任意类型<br>
+4.每个键必定是唯一的，如果存在重复的键，后者会覆盖前者</p>
+<h3 id="字典的常用方法">字典的常用方法</h3>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307082100496.png" alt="" loading="lazy"></figure>
+<h2 id="公用方法">公用方法</h2>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307082135118.png" alt="" loading="lazy"></figure>
+<h1 id="python函数基础">python函数基础</h1>
+<ul>
+<li>基本上所有的高级语言都支持函数，python也不例外。python不但能灵活地定义函数，而且本身内置了很多有用的函数，可以直接调用。</li>
+<li>函数就是最基本的一种代码抽象的方式。</li>
+</ul>
+<h2 id="函数基础">函数基础</h2>
+<p>重点：函数参数（传参。调用，不定长参数），函数返回值（return）<br>
+难点：函数参数（缺省参数，不定长参数）</p>
+<h3 id="什么是函数">什么是函数</h3>
+<p>函数就是一系列python语句的组合，可以在程序中运行一次或者多次，是具有独立功能的代码块<br>
+###为什么要使用函数<br>
+代码的复用最大化以及最小化冗余代码，整体代码结构清晰，问题局部化</p>
+<h3 id="如何定义函数">如何定义函数</h3>
+<p>函数定义：</p>
+<ul>
+<li>def 函数名 (参数列表):0-n个参数<br>
+函数体【一系列的python语句，表示独立的功能】<br>
+函数调用：本质就是去执行函数定义里面的代码块，在函数调用之前必须定义函数<br>
+函数名（）即可调用该函数<br>
+函数备注</li>
+<li>在函数的第一行用三个连续的单引号用字符串进行备注'''        '''</li>
+</ul>
+<h2 id="函数参数">函数参数</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY 6 学习python第6天]]></title>
+        <id>https://G-sting.github.io/post/day-6-xue-xi-python-di-6-tian/</id>
+        <link href="https://G-sting.github.io/post/day-6-xue-xi-python-di-6-tian/">
+        </link>
+        <updated>2023-07-07T12:48:49.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="pyton高级数据类型">pyton高级数据类型</h1>
+<h2 id="什么是序列">什么是序列</h2>
+<p>在python中 序列就是一组按照顺序排列的值【数据集合】<br>
+在 python中 存在三种内置的序列类型：<br>
+字符串，列表，元组</p>
+<h3 id="序列的优点">序列的优点</h3>
+<p>可以支持索引和切片的操作<br>
+特征：第一个正索引为0，索引指向的是左端，第一个索引为负数的时候，索引指向的是右端<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072100102.png" alt="" loading="lazy"><br>
+切片：【高级特性】可以根据下标来获取序列对象的任意【部分】数据<br>
+语法结构：【始位置：结束下标：步长】步长默认为1</p>
+<h2 id="字符串常用方法">字符串常用方法</h2>
+<h3 id="常用的字符串函数">常用的字符串函数</h3>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072108325.png" alt="" loading="lazy"></figure>
+<h2 id="列表及常用方法">列表及常用方法</h2>
+<p>list：python中非常重要的数据结构，是一种有序的数据集合</p>
+<h3 id="列表的特点">列表的特点</h3>
+<p>1.支持增删改查<br>
+2.列表中的数据是可以变化的【数据项可以变化，内存地址不会改变】<br>
+3.用【】来表示列表类型，数据项之间用逗号来分割。注意：数据项可以是任何类型的数据<br>
+4.支持索引和切片来进行操作<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072156223.png" alt="" loading="lazy"></p>
+<h2 id="元组及常用方法">元组及常用方法</h2>
+<p>元组：是一种不可变的序列，在创建之后不能做任何修改</p>
+<h3 id="元组的特点">元组的特点</h3>
+<p>1.不可变<br>
+2.用（）来创建元组类型，数据项用逗号分割，可以是任何类型<br>
+3.当元组中只有一个元素时，要加上逗号，不然解释器会当成整型来执行<br>
+4.同样支持切片操作<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072309939.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY 5 学习python第五天]]></title>
+        <id>https://G-sting.github.io/post/day-5-xue-xi-python-di-wu-tian/</id>
+        <link href="https://G-sting.github.io/post/day-5-xue-xi-python-di-wu-tian/">
+        </link>
+        <updated>2023-07-06T12:27:57.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="for循环">🏀🏀🏀 for循环</h3>
+<p>for 临时变量 in 字符串，列表等：<br>
+代码块A<br>
+代码块B<br>
+......<br>
+特点：遍历操作，依次的取集合容器中的每个值</p>
+<h3 id="break和continue两个关键字">break和continue两个关键字</h3>
+<ul>
+<li>break：break 代表中断和结束   满足条件直接结束本层循环</li>
+<li>continue：结束本次循环，继续进行下次循环（当continue的条件满足时，本次循环将不再执行剩下的循环语句，后面的循环继续）</li>
+<li>这两个关键字只能用在循环中</li>
+</ul>
+<h3 id="while-和for的针对性">while 和for的针对性</h3>
+<p>while 使用：适用于对未知的循环次数 用于判断<br>
+for使用：是用于已知的循环次数【可迭代对象的遍历】</p>
+<h3 id="for-else和-while-else语句">for-----else和 while-----else语句</h3>
+<p>在上面的循环当中，只要是出现了break，那么else的代码将不会执行<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307062138917.png" alt="" loading="lazy"><br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307062139998.png" alt="" loading="lazy"><br>
+课堂练习<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307062140731.png" alt="" loading="lazy"><br>
+代码实操<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307062238235.png" alt="" loading="lazy"><br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307062240669.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY 4学习python第四天]]></title>
+        <id>https://G-sting.github.io/post/day-4-xue-xi-python-di-si-tian/</id>
+        <link href="https://G-sting.github.io/post/day-4-xue-xi-python-di-si-tian/">
+        </link>
+        <updated>2023-07-05T11:21:03.000Z</updated>
+        <content type="html"><![CDATA[<p>🗼🗼🗼</p>
+<h1 id="python判断语句和循环控制">python判断语句和循环控制</h1>
+<h2 id="什么是流程">什么是流程</h2>
+<ul>
+<li>计算机执行代码的顺序</li>
+</ul>
+<h2 id="什么是流程控制">什么是流程控制</h2>
+<p>-对计算机代码执行的顺序进行有效的流程管理，只有流程控制才实现在开发过程中的业务逻辑</p>
+<h3 id="流程控制的分类">流程控制的分类：</h3>
+<ul>
+<li>
+<p>顺序流程：代码一种自上而下的执行结构，也是python的默认流程</p>
+</li>
+<li>
+<p>选择流程/分支流程：根据在某一步的判断有选择的去执行相应的逻辑的一种结构</p>
+<ul>
+<li>单分支<br>
+if  条件表达式：比较运算符/逻辑运算符/符合表达式<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......</li>
+<li>双分支<br>
+if  条件表达式：比较运算符/逻辑运算符/符合表达式<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......<br>
+else :<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......</li>
+<li>多分支<br>
+if  条件表达式：<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......<br>
+elif 条件表达式:<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+elif 条件表达式:<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......<br>
+else :<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......<br>
+特征：只要满足其中一个分支，就会退出本层if结构【必定会执行其中一个分支】</li>
+</ul>
+</li>
+<li>
+<p>至少有两种情况可以选择</p>
+</li>
+<li>
+<p>elif 后面必须跟上条件和语句<br>
+-else是选配，根据实际情况来填写<br>
+条件表达式：比较运算符/逻辑运算符/复合的运算式<br>
+if-else嵌套结构</p>
+</li>
+<li>
+<p>一个场景需要分阶段或者层次，做出不同的处理</p>
+</li>
+<li>
+<p>需要执行内部的if语句，首先要满足外部的if语句才可以<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307052148213.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>循环流程：在满足一定的条件下一直重复的去执行某段代码的逻辑【事情】</p>
+<ul>
+<li>
+<p>while 条件表达式：<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......</p>
+</li>
+<li>
+<p>循环必须有一个初始值</p>
+</li>
+<li>
+<p>条件表达式</p>
+</li>
+<li>
+<p>变量【循环体内计数变量】的自增或者自减，否则会造成死循环</p>
+</li>
+<li>
+<p>使用条件：循环次数不确定，是依靠循环条件来结束</p>
+</li>
+<li>
+<p>目的:为了将相似或者相同代码操作变得更加简洁，使得代码可以重复利用</p>
+</li>
+<li>
+<p>for ... in 可迭代集合对象：<br>
+一条条的python代码<br>
+一条条的python代码<br>
+一条条的python代码<br>
+......</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Day 3  学习python第三天]]></title>
+        <id>https://G-sting.github.io/post/day-3-xue-xi-python-di-san-tian/</id>
+        <link href="https://G-sting.github.io/post/day-3-xue-xi-python-di-san-tian/">
+        </link>
+        <updated>2023-07-04T09:37:15.000Z</updated>
+        <content type="html"><![CDATA[<p>☂️☂️☂️<br>
+#变量和数据类型</p>
+<h2 id="什么是变量">什么是变量：</h2>
+<ul>
+<li>变量其实就是一个盒子，可以装各种东西，当装了苹果，箱子和其他东西结合时候就是属于苹果；装了香蕉，箱子和其他东西结合时候就是属于香蕉。<br>
+在python当中，变量的概念和初中的方程变量是一致的。</li>
+<li>在计算机中，写程序时，变量不仅仅可以是数字，还可以是其他的任意类型。</li>
+<li>变量=存储的数据</li>
+<li>顾名思义：变量是一段有名字的连续存储的空间，并通过变量的名字来使用这段存储空间</li>
+<li>变量是程序中临时存放数据的场所</li>
+<li>变量是可以多次赋值的（在程序运行过程中，值可以改变的量）</li>
+</ul>
+<h3 id="变量如何来定义和使用">变量如何来定义和使用</h3>
+<p>定义规则： 变量名=数据      先定义变量，然后才能使用。</p>
+<h2 id="python数据类型">python数据类型</h2>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042024366.png" alt="" loading="lazy"></figure>
+<ul>
+<li>如何判断数据类型</li>
+<li>pythotype方法查看变量的类型<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042042821.png" alt="" loading="lazy">
+<h3 id="高级类型">高级类型</h3>
+</li>
+</ul>
+<p>**a=() ** 元组类型<br>
+<strong>b=[]</strong> 列表类型<br>
+**c={} ** 字典类型</p>
+<h2 id="变量的命名规则">变量的命名规则</h2>
+<ul>
+<li>变量命名必须以字母(a-z,A-Z)或( _ )开头</li>
+<li>其他字符可以是字母，数字或 _</li>
+<li>变量区分大小写</li>
+<li>Python关键字不能作为变量名</li>
+<li>变量不能以数字开头</li>
+</ul>
+<h2 id="命名规范">命名规范</h2>
+<ul>
+<li>见名知意，尽量使用有语义的单词命名。如用password做密码，username做用户名。</li>
+<li>小驼峰式命名法：第一个单词首字母小写其他首字母都用大写,如userName</li>
+<li>大驼峰式命名法：全部单词首字母都大写,如UserName</li>
+<li>下划线命名法：每个单词用下划线连接，如user_name</li>
+</ul>
+<h2 id="算术运算符">算术运算符</h2>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042106259.png" alt="" loading="lazy"><br>
+在pycharm上实操<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042107696.png" alt="" loading="lazy"></p>
+<h2 id="比较运算符-结果为true或false">比较运算符 结果为True或False</h2>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042108435.png" alt="" loading="lazy"><br>
+在pycharm上实操<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042110968.png" alt="" loading="lazy"></p>
+<h2 id="逻辑运算符">逻辑运算符</h2>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042113886.png" alt="" loading="lazy"><br>
+在pycharm上实操<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042123985.png" alt="" loading="lazy"></p>
+<h3 id="逻辑运算优先级">逻辑运算优先级</h3>
+<p><strong>()-&gt;not-&gt;and-&gt;or</strong></p>
+<h2 id="赋值运算符">赋值运算符</h2>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042127916.png" alt="" loading="lazy"><br>
+在pycharm上实操<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042133973.png" alt="" loading="lazy"></p>
+<h1 id="python中的输入与输出">python中的输入与输出</h1>
+<h2 id="python格式化输出">python格式化输出</h2>
+<p>python有一个简单的字符串格式化方法，用%做占位符，%后面跟的是变量的类型。<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042146852.png" alt="" loading="lazy"><br>
+输出结果<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042146031.png" alt="" loading="lazy"></p>
+<ul>
+<li>换行符号 /n，此时/n后内容会在下一行显示</li>
+</ul>
+<h3 id="常用的格式化符号">常用的格式化符号</h3>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042150296.png" alt="" loading="lazy"><br>
+课堂练习<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042151413.png" alt="" loading="lazy"><br>
+代码<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042204537.png" alt="" loading="lazy"></p>
+<h3 id="格式化输出的另外一个方式-format">格式化输出的另外一个方式  .format()</h3>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042202012.png" alt="" loading="lazy"></figure>
+<h2 id="python输入">python输入</h2>
+<ul>
+<li>python中提供了input方法来获得键盘输入<br>
+Tip：input接受的键盘输入都是str类型，如果接收数字类型需要将str转化为int<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307042217680.png" alt="" loading="lazy"></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DAY 2 正式学习python]]></title>
+        <id>https://G-sting.github.io/post/day-2-zheng-shi-xue-xi-python/</id>
+        <link href="https://G-sting.github.io/post/day-2-zheng-shi-xue-xi-python/">
+        </link>
+        <updated>2023-07-03T12:01:35.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="python学习视频链接"><a href="https://www.bilibili.com/video/BV1vA411b7Rn/?vd_source=a32f7b61df94400c6aaf62d22eb6f0f7">python学习视频链接</a></h1>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032016488.png" alt="" loading="lazy"></figure>
+<h2 id="python的发展">python的发展</h2>
+<p>1.python是一种<strong>面向对象</strong>的<strong>解释型计算机程序设计语言</strong>，被称为胶水语言。<br>
+2.python 2.0版本和3.0版本并不兼容，2020年官方不再支持python3.0版本。</p>
+<h2 id="python的优点">python的优点</h2>
+<p>1.简单易学 2.免费开源 3.丰富的第三方库 4.可以移植 5.面向对象</p>
+<h2 id="python的缺点">python的缺点</h2>
+<p>1.运行速度慢 2.代码不能加密 3.强制的缩进 4.GIL全局解释器锁<br>
+（在任意时刻，只有一个线程在解释器中运行，对python虚拟机访问由全局解释器GIL来控制）<br>
+<em>解释型语言</em>：源代码编译成CPU能识别的机器语言，计算机直接识别机器语言<br>
+<em>编译型语言（c语言）</em>：代码逐行通过解释器后交付给CPU，解释过程需要花费时间</p>
+<h2 id="python可以做什么工作">python可以做什么工作</h2>
+<p>1.web后台开发 2.爬虫开发 3.数据分析 4.运维开发 (系统运维，项目运维)5.机器学习 6.人工智能</p>
+<h1 id="python环境安装">python环境安装</h1>
+<p><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032049549.png" alt="" loading="lazy"><br>
+Tip：检验是否安装成功，windows+R 输入python，看是否进入下面画面<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032120182.png" alt="" loading="lazy"></p>
+<h3 id="如何保存一个python文件">如何保存一个python文件</h3>
+<p>创建一个以**.py**结尾的文件，可以保存python代码。<br>
+执行文件过程：首先打开命令行的提示符，然后进入执行文件的本地目录，然后输入 python 文件名称.py<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032136127.png" alt="" loading="lazy"><br>
+捷径：在打开文件的资源管理器上面路径输入框敲入cmd命令即可进入<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032141497.png" alt="" loading="lazy"><br>
+结尾:课堂小任务<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032144880.png" alt="" loading="lazy"><br>
+我的成果<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307032147430.png" alt="" loading="lazy"></p>
+<h1 id="python的注释">python的注释</h1>
+<ul>
+<li>单行注释用#</li>
+<li>快捷注释可以使用ctrl+/</li>
+<li>多行注释使用'''      '''或者&quot;&quot;&quot;    &quot;&quot;&quot;</li>
+<li>python中有两句特殊的注释，在py文件首行#!usr/bin/python3；#--<em>coding=utf-8</em>--这两句注释分别指的是指定python解析器的路径，指定编码格式，只能写在py文件最前面。</li>
+<li>指定编码格式一般用于python2版本，为了能在python2的代码上写中文，一般在指定编译器后指定编码方式为utf-8，python3如果需要兼容python2的文件，需要加上指定编码格式这一行代码。<br>
+主要作用：提高代码可读性；方便代码测试</li>
+</ul>
+<h2 id="pycharm的使用">pycharm的使用</h2>
+<p>pycharm优点：<br>
+节省时间和精力，可以使开发者更加的快捷方便<br>
+建立统一标准，管理开发工作</p>
+]]></content>
+    </entry>
+</feed>

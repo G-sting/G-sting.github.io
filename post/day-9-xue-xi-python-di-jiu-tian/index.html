@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DAY 9 学习python第九天 | sting</title>
+<link rel="shortcut icon" href="https://G-sting.github.io/favicon.ico?v=1690206885775">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://G-sting.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="DAY 9 学习python第九天 | sting - Atom Feed" href="https://G-sting.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="🦊🦊🦊
+函数的基本类型
+
+无参数 无返回值，一般用于提示信息打印
+无参数 有返回值，多用在数据采集中，比如获取系统信息
+有参数 无返回值，多用在设置某些不需要返回值的参数设计
+有参数 有返回值 一般是计算型的，需要参数，最终也要返回结..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://G-sting.github.io">
+  <img class="avatar" src="https://G-sting.github.io/images/avatar.png?v=1690206885775" alt="">
+  </a>
+  <h1 class="site-title">
+    sting
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              DAY 9 学习python第九天
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-07-10
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>🦊🦊🦊</p>
+<h1 id="函数的基本类型">函数的基本类型</h1>
+<ul>
+<li>无参数 无返回值，一般用于提示信息打印</li>
+<li>无参数 有返回值，多用在数据采集中，比如获取系统信息</li>
+<li>有参数 无返回值，多用在设置某些不需要返回值的参数设计</li>
+<li>有参数 有返回值 一般是计算型的，需要参数，最终也要返回结果</li>
+</ul>
+<h2 id="局部变量">局部变量</h2>
+<ul>
+<li>局部变量 就是在函数内部定义的变量 作用域仅仅局限在函数的内部</li>
+<li>不同的函数 可以定义相同的局部变量 但是各自用各自的不会产生影响</li>
+</ul>
+<h3 id="局部变量的作用">局部变量的作用</h3>
+<p>为了临时的保存数据，需要在函数中定义来进行存储</p>
+<h2 id="全局变量">全局变量</h2>
+<p>可以在整个程序里面使用的数据</p>
+<h3 id="tip">Tip：</h3>
+<ul>
+<li>当全局变量和局部变量出现重复定义的时候，程序会优先执行使用函数内部定义的变量</li>
+<li>如果在函数的内部想对全局变量进行修改的话，必须用global关键字进行声明 格式：global 全局变量</li>
+</ul>
+<h2 id="函数的引用">函数的引用</h2>
+<p>不可变类型：改变地址 不改变变量<br>
+可变类型：不改变地址 改变变量</p>
+<h2 id="小结-在python当中-万物皆对象-在函数调用的时候实参传递的就是对象的引用">小结 在python当中 万物皆对象 在函数调用的时候，实参传递的就是对象的引用</h2>
+<p>了解了原理之后就可以更好的去把控 在函数内部的处理是否会影响到函数外部的数据变化</p>
+<ul>
+<li>参数的传递是通过对象引用来完成的</li>
+<li>参数的传递是通过对象引用来完成的</li>
+<li>参数的传递是通过对象引用来完成的</li>
+</ul>
+<h2 id="匿名函数">匿名函数</h2>
+<p>python中使用lambda关键字创建匿名函数，所谓匿名即这个函数没有名字不用def关键字创建标准的函数</p>
+<h3 id="格式">格式：</h3>
+<p>lambda 参数1 参数2 参数3 ...  :表达式</p>
+<h3 id="特点">特点：</h3>
+<p>1.使用lambda关键字去创建函数<br>
+2.没有名字的函数，<br>
+3.匿名函数冒号后面的表达式有且只有一个，注意：是表达式不是语句<br>
+4.匿名函数自带return 而这个return的结果就是表达式计算后的结果</p>
+<h3 id="使用">使用</h3>
+<p>通过变量来调用匿名函数</p>
+<h2 id="lambda与三元运算">lambda与三元运算</h2>
+<p>示例：lambda x,y: x if x&gt;y else y</p>
+<h3 id="lambda的缺点">lambda的缺点：</h3>
+<ul>
+<li>lambda只能是单个表达式，不是代码块，lambda的设计就是为了满足简单函数的场景</li>
+<li>仅仅能封装有限的逻辑，复杂逻辑实现不了，必须使用def来处理</li>
+</ul>
+<h2 id="递归函数">递归函数</h2>
+<p>如果一个函数在内部不调用其他的函数，而是自己调用自己本身的话，这个函数就是递归函数。<br>
+递归函数必须要有一个结束的条件，否则递归无法结束会一直递归下去，只到达最大递归深度报错</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B">函数的基本类型</a>
+<ul>
+<li><a href="#%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F">局部变量</a>
+<ul>
+<li><a href="#%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8">局部变量的作用</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F">全局变量</a>
+<ul>
+<li><a href="#tip">Tip：</a></li>
+</ul>
+</li>
+<li><a href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%95%E7%94%A8">函数的引用</a></li>
+<li><a href="#%E5%B0%8F%E7%BB%93-%E5%9C%A8python%E5%BD%93%E4%B8%AD-%E4%B8%87%E7%89%A9%E7%9A%86%E5%AF%B9%E8%B1%A1-%E5%9C%A8%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E7%9A%84%E6%97%B6%E5%80%99%E5%AE%9E%E5%8F%82%E4%BC%A0%E9%80%92%E7%9A%84%E5%B0%B1%E6%98%AF%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BC%95%E7%94%A8">小结 在python当中 万物皆对象 在函数调用的时候，实参传递的就是对象的引用</a></li>
+<li><a href="#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0">匿名函数</a>
+<ul>
+<li><a href="#%E6%A0%BC%E5%BC%8F">格式：</a></li>
+<li><a href="#%E7%89%B9%E7%82%B9">特点：</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8">使用</a></li>
+</ul>
+</li>
+<li><a href="#lambda%E4%B8%8E%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97">lambda与三元运算</a>
+<ul>
+<li><a href="#lambda%E7%9A%84%E7%BC%BA%E7%82%B9">lambda的缺点：</a></li>
+</ul>
+</li>
+<li><a href="#%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0">递归函数</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://G-sting.github.io/post/day8-xue-xi-python-di-ba-tian/">
+              <h3 class="post-title">
+                DAY8 学习python第八天
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://G-sting.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

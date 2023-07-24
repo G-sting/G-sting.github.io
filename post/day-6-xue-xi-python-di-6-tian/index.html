@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DAY 6 学习python第6天 | sting</title>
+<link rel="shortcut icon" href="https://G-sting.github.io/favicon.ico?v=1690206885775">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://G-sting.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="DAY 6 学习python第6天 | sting - Atom Feed" href="https://G-sting.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="pyton高级数据类型
+什么是序列
+在python中 序列就是一组按照顺序排列的值【数据集合】
+在 python中 存在三种内置的序列类型：
+字符串，列表，元组
+序列的优点
+可以支持索引和切片的操作
+特征：第一个正索引为0，索引指向的是左端..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://G-sting.github.io">
+  <img class="avatar" src="https://G-sting.github.io/images/avatar.png?v=1690206885775" alt="">
+  </a>
+  <h1 class="site-title">
+    sting
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              DAY 6 学习python第6天
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-07-07
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="pyton高级数据类型">pyton高级数据类型</h1>
+<h2 id="什么是序列">什么是序列</h2>
+<p>在python中 序列就是一组按照顺序排列的值【数据集合】<br>
+在 python中 存在三种内置的序列类型：<br>
+字符串，列表，元组</p>
+<h3 id="序列的优点">序列的优点</h3>
+<p>可以支持索引和切片的操作<br>
+特征：第一个正索引为0，索引指向的是左端，第一个索引为负数的时候，索引指向的是右端<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072100102.png" alt="" loading="lazy"><br>
+切片：【高级特性】可以根据下标来获取序列对象的任意【部分】数据<br>
+语法结构：【始位置：结束下标：步长】步长默认为1</p>
+<h2 id="字符串常用方法">字符串常用方法</h2>
+<h3 id="常用的字符串函数">常用的字符串函数</h3>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072108325.png" alt="" loading="lazy"></figure>
+<h2 id="列表及常用方法">列表及常用方法</h2>
+<p>list：python中非常重要的数据结构，是一种有序的数据集合</p>
+<h3 id="列表的特点">列表的特点</h3>
+<p>1.支持增删改查<br>
+2.列表中的数据是可以变化的【数据项可以变化，内存地址不会改变】<br>
+3.用【】来表示列表类型，数据项之间用逗号来分割。注意：数据项可以是任何类型的数据<br>
+4.支持索引和切片来进行操作<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072156223.png" alt="" loading="lazy"></p>
+<h2 id="元组及常用方法">元组及常用方法</h2>
+<p>元组：是一种不可变的序列，在创建之后不能做任何修改</p>
+<h3 id="元组的特点">元组的特点</h3>
+<p>1.不可变<br>
+2.用（）来创建元组类型，数据项用逗号分割，可以是任何类型<br>
+3.当元组中只有一个元素时，要加上逗号，不然解释器会当成整型来执行<br>
+4.同样支持切片操作<br>
+<img src="https://raw.githubusercontent.com/1914289231/PicGo/master/img/202307072309939.png" alt="" loading="lazy"></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#pyton%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">pyton高级数据类型</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BA%8F%E5%88%97">什么是序列</a>
+<ul>
+<li><a href="#%E5%BA%8F%E5%88%97%E7%9A%84%E4%BC%98%E7%82%B9">序列的优点</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95">字符串常用方法</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0">常用的字符串函数</a></li>
+</ul>
+</li>
+<li><a href="#%E5%88%97%E8%A1%A8%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95">列表及常用方法</a>
+<ul>
+<li><a href="#%E5%88%97%E8%A1%A8%E7%9A%84%E7%89%B9%E7%82%B9">列表的特点</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%83%E7%BB%84%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95">元组及常用方法</a>
+<ul>
+<li><a href="#%E5%85%83%E7%BB%84%E7%9A%84%E7%89%B9%E7%82%B9">元组的特点</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://G-sting.github.io/post/day-5-xue-xi-python-di-wu-tian/">
+              <h3 class="post-title">
+                DAY 5 学习python第五天
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://G-sting.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
